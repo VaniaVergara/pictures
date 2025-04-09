@@ -1,12 +1,12 @@
 import { useState } from "react"
 import './SearchBar.css'
 
-const searchBar = ({ onSubmit }) => {
+const SearchBar = ({ onSubmit }) => {
     const [term, setTem] = useState('')
 
     const handleFromSubmit = (event) => {
         event.preventDefault()
-        console.log ('necesito decirle al componente papa sobre los datos');
+        console.log ('necesito decirle al componente papa sobre los datos')
         onSubmit(term)
     }
 
@@ -25,4 +25,4 @@ const searchBar = ({ onSubmit }) => {
   )
 }
 
-export default searchBar
+export default SearchBar
