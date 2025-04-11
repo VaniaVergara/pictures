@@ -1,5 +1,5 @@
 import { useState} from "react"
-import SearchBar from "./componentes/searchBar"
+import SearchBar from "./componentes/SearchBar"
 import ImageList from "./componentes/imageList"
 import searchImages from "./api"
 
@@ -8,7 +8,7 @@ function App() {
   const [images, setImages] = useState([])
 
   const handleSubmit = async(term) => {
-    console,log('usted esta buscando con: ', term)
+    console.log('usted esta buscando con: ', term)
     const result = await searchImages(term)
     setImages(result)
   }

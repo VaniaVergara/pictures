@@ -16,7 +16,7 @@ const SearchBar = ({ onSubmit }) => {
     console.log('term', term)
 
   return (
-    <div className= "searchBar" >
+    <div className= "search-bar" >
         <form onSubmit={handleFromSubmit}>
             <label> termino de la busqueda:</label>
             <input onChange={handleChange} value={term}/>
